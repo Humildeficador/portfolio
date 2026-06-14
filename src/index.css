@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+	--font-mono: "Fira Code", monospace;
+
+	--color-gray-50: #f8fafc;
+	--color-gray-100: #e2e8f0;
+	--color-gray-400: #94a3b8;
+	--color-gray-800: #1e293b;
+	--color-gray-900: #1a1a1a;
+	--color-gray-950: #101418;
+	--color-gray-1000: #ededed;
+
+	--color-mint-400: #98ffd9;
+	--color-mint-600: #00695c;
+	--color-purple-400: #bb86fc;
+	--color-purple-600: #6200ee;
+}
+
+@layer base {
+	body {
+		@apply font-mono bg-gray-950 text-gray-1000 transition-colors duration-300;
+	}
+}
+
+.light {
+	body {
+		@apply bg-gray-50 text-gray-900;
+	}
+
+	--color-border-main: var(--color-gray-100);
+}
+
+:root {
+	--color-border-main: var(--color-gray-800);
+}
