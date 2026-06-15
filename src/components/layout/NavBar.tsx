@@ -2,9 +2,9 @@ import { cva, cx, type VariantProps } from 'class-variance-authority'
 import type { ComponentProps } from 'react'
 import GitHubIcon from '~/assets/icons/github.svg?react'
 import LinkedInIcon from '~/assets/icons/linkedin.svg?react'
-import { Icon } from '~/components/ui/Icon/Icon'
-import { NavLink } from '~/components/ui/NavLink/NavLink'
-import { Text } from '~/components/ui/Text/Text'
+import { Icon } from '~/components/ui/Icon'
+import { NavLink } from '~/components/ui/NavLink'
+import { Text } from '~/components/ui/Text'
 import { navItems } from '~/utils/navItems'
 
 export const navBarVariants = cva(

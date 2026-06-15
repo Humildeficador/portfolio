@@ -1,11 +1,10 @@
 import { Menu } from 'lucide-react'
-import { Icon } from '~/components/ui/Icon/Icon'
-import { Text } from '~/components/ui/Text/Text'
+import { Icon } from '~/components/ui/Icon'
+import { Text } from '~/components/ui/Text'
 
 export function PageComponents() {
 	return (
 		<div className="flex flex-col">
-			{/* <NavBar /> */}
 			<Text intent={'primary'} size={'sm'}>
 				Hello World!
 			</Text>

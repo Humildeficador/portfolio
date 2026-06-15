@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from '~/components/layout/Layout'
-import { Text } from './components/ui/Text/Text'
+import { Text } from './components/ui/Text'
 
 const Home = () => (
 	<div>
