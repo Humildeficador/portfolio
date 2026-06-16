@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from 'class-variance-authority'
-import { forwardRef, type ComponentProps } from 'react'
+import { type ComponentProps, forwardRef } from 'react'
 
 export const videoVariants = cva('object-cover pointer-events-none', {
 	variants: {
@@ -26,14 +26,14 @@ export const Video = forwardRef<HTMLVideoElement, VideoProps>(
 				muted
 				loop
 				playsInline
-        preload="metadata"
+				preload="metadata"
 				className={videoVariants({ intent, className })}
 				{...props}
 			>
 				{src && <source src={src} type="video/mp4" />}
 			</video>
 		)
-	}
+	},
 )
 
 Video.displayName = 'Video'
