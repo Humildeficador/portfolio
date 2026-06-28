@@ -1,16 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from '~/components/layout/Layout'
-import { Text } from '~/components/ui/Text'
+import { Home } from '~/pages/Home/Index'
 import { Projects } from '~/pages/Projects'
 
-const Home = () => (
-	<div>
-		<h1 className="text-2xl font-mono text-teal-300 mb-4">~/home</h1>
-		<Text>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, et?
-		</Text>
-	</div>
-)
 const Skills = () => (
 	<div>
 		<h1 className="text-2xl font-mono text-teal-300">./skills</h1>
