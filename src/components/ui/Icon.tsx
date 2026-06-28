@@ -1,5 +1,6 @@
-import { cva, cx, type VariantProps } from 'class-variance-authority'
+import { cva, type VariantProps } from 'class-variance-authority'
 import type { ComponentProps, FC } from 'react'
+import { cn } from '~/utils/cn'
 
 export const iconVariants = cva('shrink-0 pointer-events-none', {
 	variants: {
@@ -11,7 +12,7 @@ export const iconVariants = cva('shrink-0 pointer-events-none', {
 		color: {
 			primary: 'text-gray-1000',
 			secondary: 'text-gray-400',
-			accent: 'text-mint-400',
+			accent: 'text-cyan-400',
 			currentColor: 'text-[currentColor]'
 		},
 		clickable: {
@@ -42,7 +43,7 @@ export function Icon({
 }: IconProps) {
 	return (
 		<SVGComponent
-			className={cx(iconVariants({ size, color, clickable }), className)}
+			className={cn(iconVariants({ size, color, clickable }), className)}
 			{...props}
 		/>
 	)

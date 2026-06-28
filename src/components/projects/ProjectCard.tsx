@@ -11,8 +11,8 @@ export const projectCardVariants = cva(
 		variants: {
 			isFeatured: {
 				true: [
-					'md:col-span-2 lg:col-span-3 border-[color-mix(in_srgb,var(--color-mint-400),var(--color-mint-600))]/40 shadow-[0_0_15px_rgba(45,212,191,0.05)]',
-					'hover:border-[color-mix(in_srgb,var(--color-mint-400),var(--color-mint-600))]/60 hover:shadow-[0_0_25px_rgba(45,212,191,0.15)]',
+					'md:col-span-2 lg:col-span-3 border-[color-mix(in_srgb,var(--color-cyan-400),var(--color-cyan-600))]/40 shadow-[0_0_15px_rgba(45,212,191,0.05)]',
+					'hover:border-[color-mix(in_srgb,var(--color-cyan-400),var(--color-cyan-600))]/60 hover:shadow-[0_0_25px_rgba(45,212,191,0.15)]',
 				].join(' '),
 				false: 'border-slate-800 hover:border-slate-700',
 			},
@@ -58,7 +58,7 @@ export const ProjectCard = forwardRef<HTMLButtonElement, ProjectCardProp>(({ pro
 			{videoUrl && (
 				<>
 					<Video ref={videoRef} intent="background" src={videoUrl} />
-					<div className="absolute inset-0 z-0 bg-linear-to-r from-gray-950 via-gray-950/90 to-transparent pointer-events-none" />
+					<div className="absolute inset-0 z-0 bg-linear-to-r from-slate-950 via-slate-950/90 to-transparent pointer-events-none" />
 				</>
 			)}
 			<div

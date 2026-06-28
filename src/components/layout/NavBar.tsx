@@ -18,7 +18,7 @@ export function NavBar({ className, ...props }: NavBarProps) {
 	return (
 		<aside className={cx(navBarVariants(), className)} {...props}>
 			<div>
-				<Text intent={'accent'} className="select-none">
+				<Text intent={'accent'} size={'lg'} className="select-none">
 					joao@portfolio:~$
 				</Text>
 			</div>

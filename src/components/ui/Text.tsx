@@ -1,5 +1,6 @@
-import { cva, cx, type VariantProps } from 'class-variance-authority'
+import { cva, type VariantProps } from 'class-variance-authority'
 import { createElement, type HTMLAttributes } from 'react'
+import { cn } from '~/utils/cn'
 
 export const textVariants = cva(``, {
 	variants: {
@@ -14,7 +15,7 @@ export const textVariants = cva(``, {
 		intent: {
 			primary: 'text-gray-1000',
 			secondary: 'text-gray-400',
-			accent: 'text-teal-300',
+			accent: 'text-cyan-500',
 		},
 	},
 	defaultVariants: {
@@ -40,7 +41,7 @@ export function Text({
 	return createElement(
 		as,
 		{
-			className: cx(textVariants({ size, intent }), className),
+			className: cn(textVariants({ size, intent }), className),
 			...props,
 		},
 		children,
